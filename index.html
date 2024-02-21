@@ -18,7 +18,87 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Anshika</span><br>Singh From India</h1>
+        </div>
         </div>
     </div>
+<!-- ----------------about------------------ -->
+    <div id="about"> 
+        <div class="container">
+            <div class="row">
+            <!-- <div class="about-col-1">
+                <img src="images/myimg.jpg"> -->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A passionate and driven Computer Science Engineering student aspiring to leverage my technical skills, academic knowledge, and hands-on experience to contribute effectively to innovative projects and dynamic teams within the realm of technology. With a strong foundation in computer science principles, programming languages, and software development methodologies, I aim to pursue challenging opportunities where I can continuously enhance my skills while making meaningful contributions to the field. 
+                <br>
+                As a Computer Science Engineering student, my objective is to secure a position where I can apply my theoretical understanding and practical expertise to address real-world problems and drive technological advancements. Throughout my academic journey, I have cultivated a deep passion for exploring emerging technologies, solving complex problems, and collaborating with multidisciplinary teams to create impactful solutions. 
+                <br>
+                With proficiency in programming languages such as Python, Java, and C++, I am equipped to develop efficient and scalable software solutions tailored to meet specific requirements. Additionally, my familiarity with data structures, algorithms, and software development methodologies enables me to design robust and reliable applications that align with industry best practices. 
+                <br>
+                Moreover, I am adept at utilizing various software development tools and platforms, including Git, Docker, and Agile methodologies, to streamline the development process and ensure timely delivery of high-quality software products. My experience in working on both individual projects and group assignments has honed my ability to communicate effectively, adapt to changing requirements, and collaborate harmoniously with team members to achieve common goals.
+
+                Driven by a relentless curiosity and a thirst for knowledge, I am committed to staying updated with the latest advancements in technology and continuously enhancing my skill set. Whether it involves exploring machine learning algorithms, delving into cloud computing architectures, or experimenting with IoT devices, I am eager to embrace new challenges and expand my horizons in the ever-evolving field of computer science. 
+                <br>
+
+                Overall, I am excited about the opportunity to leverage my academic background and practical experience to make meaningful contributions while furthering my growth as a computer science professional.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('traning')">Traning</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/AppnInterface</li>
+                        <li><span>Web Development</span><br>Web Application development</li>
+                        <li><span>Application Development</span><br>Building application</li>    
+                    </ul>
+                </div>
+
+                    <div class="tab-contents" id="traning">
+                        <ul>
+                            <li><span>2024 - Present</span><br>JavaScript traing from Youtube</li>
+                            <li><span>2021 - 2022</span><br>Web development Training from Internshala</li>
+                            <li><span>2020 - 2021</span><br>Data Science in R</li>    
+                        </ul>
+                    </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - 2024</span><br>B.Tech from Chandigarh University</li>
+                                <li><span>2018 - 2021</span><br>Diploma from SLIET</li>
+                                <li><span>2017 - 2018</span><br>Matriculation</li>    
+                            </ul>
+
+                </div>
+            </div>
+        
+        
+    </div>
+</div>
+</div>
+
+<!-- --------------------------------Services----------------------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
