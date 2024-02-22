@@ -167,3 +167,8 @@ nav ul li{
     background: #ff004f;
     transform: translateY(-10px);
 }
+
+/* --------porfolio------------ */
+#portfolio{
+    padding: 50px 0;
+}
