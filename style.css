@@ -10,7 +10,21 @@ html{
 body{
     background: #080808;
     color: #fff;
+    overflow-x: hidden;
 }
+
+@media only screen and (max-width: 700px) {
+    #header {
+        width: 100%;
+    }
+
+    .header-text {
+        margin-right: 0;
+        margin-top: 10%;
+        font-size: 20px;
+    }
+}
+
 #header{
     width: 100%;
     height: 100vh;
@@ -267,13 +281,13 @@ nav ul li{
     background: #ff004f;
 }
 /* -------------------contact----------------------- */
- .cotact-left{
+ .contact-left{
     flex-basis: 35%;
 }
-.cotact-right{
+.contact-right{
     flex-basis: 60%;
 }
-.cotact-left p{
+.contact-left p{
     margin-top: 30px;
 }
 
@@ -367,9 +381,6 @@ form .btn2{
   }
 
   @media only screen and (max-width:600px) {
-     /* #header{
-        background-image: url(images/phone-background.png);
-    }  */
 
     .header-text{
         margin: 100%;
@@ -425,9 +436,18 @@ form .btn2{
       }
   }
 
-  #msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-  }
-  
+
+@media only screen and (max-width: 600px) {
+
+    .header-text {
+        margin: 12%;
+    }
+}
+
+
+
+
+   
+
+
+   
